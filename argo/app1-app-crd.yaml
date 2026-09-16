@@ -11,6 +11,8 @@ spec:
     path: app1-helm
     helm:
       releaseName: app1
+      valueFiles:
+        - env/test.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: app1-ns
